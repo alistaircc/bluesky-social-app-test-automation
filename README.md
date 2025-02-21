@@ -1,4 +1,4 @@
-# CIS 565 Group Project
+# CIS 565 Group Project Boilerplate
 ## Bluesky Automation Testing Pipeline Documentation
 
 ### Description: Developing an end-to-end test automation pipeline leveraging the playwright framework to execute the following tests for the Bluesky Open Source Social Platform:

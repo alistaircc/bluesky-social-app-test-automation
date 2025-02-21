@@ -40,6 +40,8 @@ jobs:
       run: npx playwright install --with-deps
       # Run the playwright test scripts wuth tag name UI
     - name: Run Playwright tests
+      # Specify which directory to run the tests from
+      working-directory: ./tests
       run: xvfb-run npx playwright test --grep @UI
       # Upload the test scripts reports to the following directory, if the job was not cancelled. Keep report for 30 days
     - uses: actions/upload-artifact@v4

@@ -4,7 +4,7 @@ name: Playwright Tests
 on:
   # Remote push request to 'main' repo, run below job
   push:
-    branches: [ main ]
+    branches: [ main, login-functionality]
 
   # Manual github actions calls, run below job
   workflow_dispatch:
@@ -44,5 +44,4 @@ jobs:
       if: ${{ !cancelled() }}
       with:
         name: playwright-report-ui
-        path: playwright-reports/
         retention-days: 30
